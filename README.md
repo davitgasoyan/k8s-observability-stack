@@ -58,4 +58,7 @@ Apply manifests:
 
 ```bash
 kubectl create namespace logging
-kubectl apply -f logging/
+kubectl apply -f logging/cadvisor
+kubectl apply -f logging/loki
+kubectl apply -f logging/prometheus
+kubectl apply -f logging/grafana

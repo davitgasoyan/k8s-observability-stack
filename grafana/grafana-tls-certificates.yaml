@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: grafana-tls
+  namespace: logging
+data:
+  tls.crt: <base64 encoded certificate> 
+  tls.key: <base64 encoded key>  
+type: Opaque
+

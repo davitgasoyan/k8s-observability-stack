@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-config
+  namespace: logging
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 15s
+    scrape_configs:
+      - job_name: 'kubelet-cadvisor'
+        scheme: http
+        static_configs:
+          - targets:
+            - X.X.X.X:10255
+            - X.X.X.X:10255
+            - X.X.X.X:10255
+            - X.X.X.X:10255
+        metrics_path: /metrics/cadvisor
+      - job_name: 'kubernetes-kube-state-metrics'
+        static_configs:
+          - targets:
+            - 'X.X.X.X:32119'
+            - 'X.X.X.X:32119'
+            - 'X.X.X.X:32119'
+            - 'X.X.X.X:32119'
+
