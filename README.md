@@ -20,7 +20,7 @@ This project demonstrates manual deployment and configuration of a full monitori
 - Persistent data is stored on NFS
 
 ## Repository Structure
-
+``` bash
 k8s-observability-stack
 |-- cadvisor
 |   |-- 
@@ -36,6 +36,7 @@ k8s-observability-stack
 |   |-- test
 |
 |-- prometheus
+```
 
 Each component contains:
 - Deployment / DaemonSet
