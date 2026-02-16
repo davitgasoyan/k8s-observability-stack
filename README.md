@@ -21,11 +21,18 @@ This project demonstrates manual deployment and configuration of a full monitori
 
 ## Repository Structure
 
-logging/
-├── cadvisor/
-├── grafana/
-├── loki/
-└── prometheus/
+k8s-observability-stack
+├── cadvisor
+│   └── 
+├── grafana
+│   ├── test
+│   ├── test
+│   └── test
+├── loki
+│   ├── test
+│   ├── test
+│   └── test
+└── prometheus
 
 Each component contains:
 - Deployment / DaemonSet
