@@ -21,21 +21,11 @@ This project demonstrates manual deployment and configuration of a full monitori
 
 ## Repository Structure
 ``` bash
-k8s-observability-stack
-|-- cadvisor
-|   |-- 
-|
-|-- grafana
-|   |--test
-|   |--test
-|   |
-|   |-- test
-|-- loki
-|   |-- test
-|   |-- test
-|   |-- test
-|
-|-- prometheus
+k8s-observability-stack/
+├── cadvisor/
+├── grafana/
+├── loki/
+└── prometheus/
 ```
 
 Each component contains:
