@@ -1,4 +1,7 @@
-# k8s-observability-stack
+# Kubernetes Observability Stack 
+
+> **Security Notice:** All sensitive information such as IP addresses, TLS certificates, admin usernames, and passwords have been replaced with placeholders (`X.X.X.X`, `<cert/key>`, `<username>`, `<password>`) for security reasons. Update these values in your own environment when deploying.
+
 Self-hosted Kubernetes observability stack with Prometheus, Loki, Grafana, and cAdvisor deployed via raw manifests on kubeadm cluster.
 
 This project demonstrates manual deployment and configuration of a full monitoring and logging pipeline without Helm charts.
